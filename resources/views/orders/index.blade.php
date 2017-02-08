@@ -16,6 +16,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th>Date Ordered</th>
                                 <th>Name</th>
                                 <th>Mobile</th>
                                 <th>Company</th>
@@ -30,6 +31,9 @@
                         <tbody>
                             @foreach($orders as $order)
                             <tr>
+                                <td>
+                                    {{ $order->created_at->format('M d, Y h:i A') }}
+                                </td>
                                 <td>
                                     {{ $order->name}}
                                 </td>
