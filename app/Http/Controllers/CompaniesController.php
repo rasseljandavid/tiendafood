@@ -88,7 +88,7 @@ class CompaniesController extends Controller
         $schedules = json_decode($company_arr->schedules);
        
         foreach($schedules as $schedule) {
-            $slots[substr($schedule, 0 ,-3)] = date("hA", strtotime($schedule));
+            $slots[date("H", strtotime($schedule))  ] = date("hA", strtotime($schedule));
         }
        
         //Slots of available delivery
@@ -97,6 +97,7 @@ class CompaniesController extends Controller
         //Get the current time
         $now =  Carbon::now();
         //For current day slot
+      
         foreach($slots as $key => $slot) {
             //if the time now is more than the 15mins of the current slot use the current day
             if ($now->diffInMinutes(Carbon::createFromTime($key,0,0), false) > 50) {
