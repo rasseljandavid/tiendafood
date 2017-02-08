@@ -37,7 +37,10 @@
                     Branches 
                         <a class="add_branch_button" href="javascript:;">
                             <i class="fa fa-plus-circle" aria-hidden="true"> </i>
+                            <br />
+                       
                         </a>
+                        <span style="font-size: 0.5em">If no branch, Add "Main"</span>
                 </h2>
 
                 <div class="branches_fields_wrap">
