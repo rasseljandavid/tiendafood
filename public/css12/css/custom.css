@@ -1,0 +1,80 @@
+a, a b, .articleHeader span a, .pagination > li > a {
+	color: #ae242a;
+}
+
+.btn.btn-red {
+	background: #ae242a;
+}
+
+h1.title {
+	color: #333;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+#header .htop, #header .left-top {
+	background: #fedf15;
+	color: #ae242a;
+}
+
+#header .links > ul > li > a, #header .links > ul > li .wrap_custom_block > a, #header .links > ul > li.mobile, #header .links > ul > li.email, #language span, #currency span, #header #top-links > ul > li > a {
+	color: #ae242a;
+}
+
+#header .links, #header .links > ul > li, #language, #currency, #header #top-links > ul > li, #header #top-links {
+	border-color: #fedf15	;
+}
+
+#header #cart .heading {
+	color: #ae242a;
+}
+
+#header #cart .heading .cart-icon {
+	background: #ae242a;
+}
+
+#header header.header-row {
+	background: #fedf15;
+}
+
+#header #menu {
+	background: #ffec6d;
+    color: #ae242a;
+}
+
+#header #menu .nav > li > a, #menu .navbar-header > span {
+	color: #ae242a;
+}
+
+#header #search input {
+	background: #fff;
+    color: #333;
+    border-color: #ccc;
+}
+
+
+#footer .fpart-first {
+    background-color: #ffec6d;
+    color: #333;
+}
+
+#footer .fpart-second {
+	background-color: #fedf15;
+	color: #333;
+}
+#footer .fpart-first a {
+	color: #ae242a;
+}
+
+#footer #powered a {
+	color: #ae242a;
+}
+
+#footer #powered {
+	border-bottom: 1px solid #ae242a;
+}
+
+#footer h5 {
+	color: #333;
+}

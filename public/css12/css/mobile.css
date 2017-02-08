@@ -1,0 +1,274 @@
+/* Fixes for the mobile and tablet */
+
+
+
+/*show cart table*/
+
+
+@media (max-width: 414px){
+
+    #show-cart-res tbody tr td:last-child {
+        text-align: left !important;
+        display: block;
+    }
+    #show-cart-res {
+    border: none ;
+    }
+    #show-cart-res{ 
+      width: 100%; 
+      border-collapse: collapse; 
+    }
+    #show-cart-res,
+    #show-cart-res thead,
+    #show-cart-res tbody,
+    #show-cart-res th,
+    #show-cart-res td,
+    #show-cart-res tr { 
+        display: block; 
+    }    
+    #show-cart-res thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px; 
+    }
+    #show-cart-res > tbody > tr{ 
+        border: 1px solid #ccc; 
+    }
+    
+    #show-cart-res > tbody > tr > td{
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 40%; 
+        
+    }
+    #show-cart-res td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 40%; 
+        padding-right: 10px; 
+        white-space: nowrap; 
+    }
+
+    #show-cart-res td:first-child:before{
+        width: 0;
+    }
+
+    #show-cart-res > tbody > tr > td:nth-of-type(1):before { content: ""; }
+    #show-cart-res > tbody > tr > td:nth-of-type(2):before { content: "Product Name"; }
+    #show-cart-res > tbody > tr > td:nth-of-type(3):before { content: "Model"; }
+    #show-cart-res > tbody > tr > td:nth-of-type(4):before { content: "Quantity"; }
+    #show-cart-res > tbody > tr > td:nth-of-type(5):before { content: "Unit Price:"; }
+    #show-cart-res > tbody > tr > td:nth-of-type(6):before { content: "Total"; }
+    
+    #show-cart-res > tbody > tr > td:before, #show-cart-res > tbody > tr > td{
+        text-align: left;
+    }
+
+    #show-cart-res > tbody > tr > td:last-child{
+            padding-left: 41%;
+    }
+    #show-cart-res > tbody > tr > td:nth-of-type(4) span{
+        display: inherit;
+    }
+    #show-cart-res > tbody > tr > td:nth-of-type(4) span input{
+        width: 1% !important;
+        /* margin: unset; */
+        display: inline;
+        position: relative;
+        bottom: -5px;
+        margin-right: 5px;
+    }
+
+}
+
+/*checkout table*/
+
+
+@media (max-width: 414px){
+
+
+    #checkout-table-res {
+    border: none ;
+    }
+    #checkout-table-res{ 
+      width: 100%; 
+      border-collapse: collapse; 
+    }
+    #checkout-table-res,
+    #checkout-table-res thead,
+    #checkout-table-res tbody,
+    #checkout-table-res th,
+    #checkout-table-res  > tbody td,
+    #checkout-table-res  > tbody tr { 
+        display: block; 
+    }    
+    #checkout-table-res thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px; 
+    }
+    #checkout-table-res > tbody > tr{ 
+        border: 1px solid #ccc; 
+    }
+    
+    #checkout-table-res > tbody > tr > td{
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 40%; 
+        
+    }
+    #checkout-table-res  > tbody td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 40%; 
+        padding-right: 10px; 
+        white-space: nowrap; 
+    }
+
+    #checkout-table-res  > tbody td:first-child:before{
+        width: 0;
+    }
+
+    #checkout-table-res > tbody > tr > td:nth-of-type(1):before { content: ""; }
+    #checkout-table-res > tbody > tr > td:nth-of-type(2):before { content: "Product Name"; }
+    #checkout-table-res > tbody > tr > td:nth-of-type(3):before { content: "Quantity"; }
+    #checkout-table-res > tbody > tr > td:nth-of-type(4):before { content: "Unit Price:"; }
+    #checkout-table-res > tbody > tr > td:nth-of-type(5):before { content: "Total"; }
+    
+    #checkout-table-res > tbody > tr > td:before, #checkout-table-res > tbody > tr > td{
+        text-align: left;
+    }
+
+    #checkout-table-res > tbody > tr > td:last-child{
+            padding-left: 41%;
+    }
+    #checkout-table-res > tbody > tr > td:nth-of-type(3) span{
+        display: inherit;
+    }
+    #checkout-table-res > tbody > tr > td:nth-of-type(3) span input{
+        width: 1% !important;
+        /* margin: unset; */
+        display: inline;
+        position: relative;
+        bottom: -5px;
+        margin-right: 5px;
+    }
+    #checkout-table-res > tfoot > tr, #checkout-table-res > tfoot > tr > td{
+        width: 100%;
+    }
+}
+
+
+
+/*********homepage responsive**********/
+
+.product-thumb{
+    text-align: center !important;
+}
+@media (max-width: 1024px){
+
+    #header #menu .nav > li > a{
+        font-size: 12.5px;        
+    }
+    .custom-feature-box {
+        width: 100%;
+        margin: unset !important;
+    }
+    .custom-feature-box div img {
+        width: 100%;
+    }
+/*    .custom-feature-box div:first-child img {
+        height: 75px;
+    }*/
+    .product-thumb{
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 768px){
+    .custom-feature-box div{
+        text-align: center;
+    }
+    .custom-feature-box div img {
+        width: initial;
+    }
+    .marketshop-banner:nth-child(2) img{
+        width: initial !important;
+    }
+    .marketshop-banner div div {
+        width: 50%;
+        text-align: -webkit-center;
+    }
+/*    .marketshop-banner:nth-child(3) img{
+        width: 100% !important;
+    }*/
+}
+@media (max-width: 736px){
+    .custom-feature-box div{
+        width: 50%;
+    }
+    footer .row div:not(.contact) {
+        width: 25%;
+    }
+/*    .marketshop-banner:nth-child(2) img{
+        width: 100% !important;
+    }*/
+    #carousel .owl-controls.clickable {
+        display: none !important;
+    }
+}
+@media (max-width: 600px){
+    .marketshop-banner:nth-child(2) img{
+        width: 100% !important;
+    }
+}
+@media (max-width: 568px){
+    .custom-feature-box div{
+        width: 100%;
+    }
+    .marketshop-banner div div {
+        width: 100%;
+        text-align: -webkit-center;
+    }
+    .marketshop-banner:nth-child(2) img{
+        width: initial !important;
+    }
+}
+@media (max-width: 414px){
+    footer .row div:not(.contact) {
+        width: 100%;
+        text-align: center;
+    }
+    #tabs a {
+        font-size: small;
+    }
+    h3.subtitle {
+        font-size: medium !important;
+    }
+
+}
+@media (max-width: 320px){
+    #tabs a {
+        font-size: small;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .marketshop-banner:nth-child(2) img{
+        width: 100% !important;
+    }
+}
+
+
+/******** category page ******/
+
+@media(max-width: 414px){
+    .product-layout.product-grid{
+        width: 250px;
+        padding: unset;
+    }
+
+}
