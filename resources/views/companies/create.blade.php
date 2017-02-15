@@ -15,11 +15,14 @@
                 <table class="table">
                     <tr>
                         <th>Name: </th>
-                        <td><input type="text" class="form-control" name="title" id="title" placeholder="Company Name" required /></td>
+                        <td><input type="text" class="form-control company-name" name="title" id="title" placeholder="Company Name" required /></td>
                     </tr>
                     <tr>
                         <th>URL: </th>
-                        <td><input type="text" class="form-control" name="url" id="url" placeholder="URL" required /></td>
+                        <td>
+                            <span id="url-text"></span>
+                            <input type="hidden" name="url" id="url-hidden" />
+                        </td>
                     </tr>
                      <tr>
                         <th>Logo: </th>

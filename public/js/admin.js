@@ -42,4 +42,24 @@ $(document).ready(function() {
     	var c = confirm("Are you sure you want to delete this item?");
     	return c;
     })
+
+    $('input.company-name').on('keyup', function() {
+        var string              = $(this).val();
+        var strReplaceAll       = string;
+        var intIndexOfMatch     = strReplaceAll.indexOf(' ');
+        while(intIndexOfMatch != -1){
+            strReplaceAll       = strReplaceAll.replace(' ', '-');
+            intIndexOfMatch     = strReplaceAll.indexOf(' ');
+        }
+        string = strReplaceAll;
+        for(var i = 0, output = '', valid='-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; i < string.length; i++) {
+            if(valid.indexOf(string.charAt(i)) != -1) {
+                output += string.charAt(i);
+            }
+        }
+
+
+        $("#url-text").html('http://food.tienda.ph/' + output.toLowerCase());
+        $("#url-hidden").val(output.toLowerCase());
+    });
 });

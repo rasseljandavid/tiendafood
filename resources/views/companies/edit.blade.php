@@ -15,11 +15,17 @@
                 <table class="table">
                     <tr>
                         <th>Company Name: </th>
-                        <td><input type="text" class="form-control" id="title" name="title" placeholder="Company Name" value="{{ $company->title }}"></td>
+                        <td><input type="text" class="form-control company-name" id="title" name="title" placeholder="Company Name" value="{{ $company->title }}"></td>
                     </tr>
                     <tr>
                         <th>URL: </th>
-                        <td><input type="text" class="form-control" id="url" name="url" placeholder="URL" value="{{ $company->slug }}"></td>
+                       
+
+                        <td>
+                            <span id="url-text">http://food.tienda.ph/{{ $company->slug }}</span>
+                            <input type="hidden" name="url" id="url-hidden" value="{{ $company->slug }}" />
+                        </td>
+
                     </tr>
                      <tr>
                         <th>Logo: </th>
