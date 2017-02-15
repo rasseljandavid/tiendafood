@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Company;
 use App\Product;
+use App\SiteConfig;
 use Carbon\Carbon;
+
+use Illuminate\Support\Facades\Auth;
 
 class CompaniesController extends Controller
 {
@@ -73,6 +76,13 @@ class CompaniesController extends Controller
      */
     public function show($slug, Request $request)
     {
+
+        $SITE_MAINTENANCE_MODE = SiteConfig::where('key', 'SITE_MAINTENANCE_MODE')->first();
+        $user                  = Auth::id();
+
+        if($SITE_MAINTENANCE_MODE->value == 1 && empty($user)) {
+           return view('layouts.maintenance');
+        }
 
         $company_arr = Company::where('slug', $slug)->firstOrFail();
 

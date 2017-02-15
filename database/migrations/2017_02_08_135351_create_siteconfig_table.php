@@ -45,6 +45,11 @@ class CreateSiteconfigTable extends Migration
         $config->key = 'CHIKKA_ADMIN_NUMBER';
         $config->value = '639155300315';
         $config->save();
+
+        $config = new SiteConfig;
+        $config->key = 'SITE_MAINTENANCE_MODE';
+        $config->value = 0;
+        $config->save();
     }
 
     /**
