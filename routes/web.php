@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('login');
-});
+Route::get('/', 'HomeController@home');
 
 Auth::routes();
 

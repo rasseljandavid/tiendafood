@@ -52,4 +52,9 @@ class HomeController extends Controller
 
         return redirect('siteconfig');
     }
+
+    public function home() {
+        $companies = Company::all()->toArray();
+        return view('home', compact('companies'));
+    }
 }
